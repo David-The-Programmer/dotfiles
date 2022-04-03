@@ -14,4 +14,6 @@ Take note when installing the git-credential-manager, use the command
 ```sh
 yay -S git-credential-manager-core-bin
 ```
+Note not to install the `git-credential-manager-core` package, that has some installation issues
+
 TODO: Document exact configuration steps here after installation
