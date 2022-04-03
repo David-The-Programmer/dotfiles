@@ -3,6 +3,7 @@
 **Note, this is my own setup for using Git with HTTPs**
 
 Will be using [git-credential-manager](https://github.com/GitCredentialManager/git-credential-manager)
+
 Will be using GPG/pass compatible files method to store the git credentials, as described [here](https://github.com/GitCredentialManager/git-credential-manager/blob/main/docs/credstores.md)
 
 Packages that need to be installed
