@@ -4,7 +4,7 @@
 
 This git config uses [git-credential-manager](https://github.com/GitCredentialManager/git-credential-manager) to store git credentials. The option used for storage is the GPG/pass compatible files option, as described [here](https://github.com/GitCredentialManager/git-credential-manager/blob/main/docs/credstores.md).
 
-There is no install/uninstall shell script to generate the git config file as there are a lots of manual user input required, which would make the script unnecessary. The installation instructions will build the git config file.
+There is no install/uninstall shell script to generate the git config file as there are a lots of manual user input required, which would make the script unnecessary. The installation instructions will build the git config file in your system.
 
 ## Installation
 
