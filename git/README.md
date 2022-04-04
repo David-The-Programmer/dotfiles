@@ -53,7 +53,7 @@ git config --global credential.credentialStore gpg
 
 Once you do any git operations like `clone`, `push`, `fetch`, etc, which require authentication, a prompt should be there asking for you to sign into Github via the browser. A browser tab should open prompting to authorise git credential manager for those git operations. After that, these operations should work without needing to authenticate again.
 
-Note that you would be prompted to enter a passphrase...(TODO: Fill in details)
+You would be prompted to enter the passphrase you used earlier. You maybe prompted to enter a password to unlock the keyring after entering the passphrase. This password should be your own laptop password.
 
 ## Uninstallation
 
