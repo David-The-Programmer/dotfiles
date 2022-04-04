@@ -1,4 +1,4 @@
 #!/bin/sh
-ln -s "$PWD/nvim/.vimrc" ~/.vimrc
+ln -s "$PWD/.vimrc" ~/.vimrc
 mkdir ~/.config/nvim
-ln -s "$PWD/nvim/init.vim" ~/.config/nvim/init.vim
+ln -s "$PWD/init.vim" ~/.config/nvim/init.vim
