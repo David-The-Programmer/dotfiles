@@ -1,45 +1,85 @@
-# Setup guide for Git
+# Setup guide for Git configs
 
-**Note, this is my own setup for using Git with HTTPs**
+**Note, this is my own setup for using Git/Github with HTTPs, this assumes Git is already installed**
 
-Will be using [git-credential-manager](https://github.com/GitCredentialManager/git-credential-manager)
+This git config uses [git-credential-manager](https://github.com/GitCredentialManager/git-credential-manager) to store git credentials. The option used for storage is the GPG/pass compatible files option, as described [here](https://github.com/GitCredentialManager/git-credential-manager/blob/main/docs/credstores.md)
 
-Will be using GPG/pass compatible files method to store the git credentials, as described [here](https://github.com/GitCredentialManager/git-credential-manager/blob/main/docs/credstores.md)
+## Installation
 
 Packages that need to be installed
 - [pass](https://www.passwordstore.org/)
 - [git-credential-manager](https://github.com/GitCredentialManager/git-credential-manager)
 
-Take note when installing the git-credential-manager, use the command 
 ```sh
-yay -S git-credential-manager-core-bin
+yay -S git-credential-manager-core-bin pass
 ```
-Note not to install the `git-credential-manager-core` package, that has some installation issues
+Note not to install the `git-credential-manager-core` package, that has some installation issues.
 
-TODO-WIP: Document exact configuration steps here after installation
-
-After installation of those packages, run the following command to configure the `git-credential-manager`
+After installation of those packages, run the following command to configure the git-credential-manager.
 ```sh
 git-credential-manager-core configure
 ```
 
-After installation of those packages, make sure to create a GPG key pair using the `gpg` tool.
+Set the username, email and preferred editor for git.
+```sh
+git config --global user.name "<username>"
+
+git config --global user.email "<email>"
+
+git config --global core.editor vim
+```
+
+Subequently, create a GPG key pair using the gpg tool.
 ```sh
 gpg --gen-key
 ```
-The name of the gpg key can be `github_creds` or something
+Set the name (user ID) of the gpg key to `github_creds`.
+As for email, just press empty to not enter an email.
 
-After that, use the `pass` tool to initialise the credential store
+You would be asked for a passphrase for the key pair, make sure to remember this passphrase, as you would need it whenever prompted by gpg due to executing git operations that require authentication.
+
+After that, use the pass tool to initialise the credential store.
 ```sh
-pass init <gpg-id>
+pass init <gpg_uid>
 ```
-`<gpg-id>` is the user ID of a GPG key pair on your system.
+`<gpg_uid>` is the user ID of a GPG key pair on your system.
 
-After that, run the following command to make sure git uses GPG for credential storage
+After that, run the following command to make sure git uses GPG for credential storage.
 ```sh
 git config --global credential.credentialStore gpg
 ```
 
-## TODO-Usage section
+## Usage
 
-Once you do any git operations like `push`, `fetch`, etc, a prompt should be there asking for personal access token or for you to sign in. After that, these operations should work without needing to authenticate again.
+Once you do any git operations like `clone`, `push`, `fetch`, etc, which require authentication, a prompt should be there asking for you to sign into Github via the browser. A browser tab should open prompting to authorise git credential manager for those git operations. After that, these operations should work without needing to authenticate again.
+
+Note that you would be prompted to enter a passphrase...(TODO: Fill in details)
+
+## Uninstallation
+
+Unconfigure the git-credential-manager
+```sh
+git-credential-manager-core unconfigure
+```
+Delete the git config file off
+```sh
+rm ~/.gitconfig
+```
+Remove gpg credential store from pass using 
+```sh
+pass rm git/https/github.com/<github_username>
+```
+Delete private/secret & public keys generated from gpg
+```sh
+gpg --delete-secret-key <key_uid>
+
+gpg --delete-key <key_uid>
+```
+Keys can be listed via the command below:
+```sh
+gpg --list-keys
+```
+Uninstalling git-credential-manager and pass
+```sh
+yay -R git-credential-manager-core-bin pass
+```
