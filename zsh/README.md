@@ -14,14 +14,14 @@ It will also install [Oh My Zsh](https://github.com/ohmyzsh/ohmyzsh) and [Powerl
 
 ```sh
 # Comment the following line to disable installation of Oh My Zsh
-# sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
 # Comment the following line to disable installation Powerlevel10k theme from Oh My Zsh
-# git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
+git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
 
 # Comment the following line to disable installation of the Oh My Zsh plugins
-# git clone https://github.com/zsh-users/zsh-autosuggestions.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
-# git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
+git clone https://github.com/zsh-users/zsh-autosuggestions.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
+git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
 ```
 
 ## Uninstallation
@@ -35,8 +35,8 @@ To remove [Oh My Zsh](https://github.com/ohmyzsh/ohmyzsh) and [Powerlevel10K](ht
 
 ```sh
 # Uncomment the following line to uninstall Powerlevel10k theme from Oh My Zsh
-rm -r -- ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
+# rm -rf -- ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
 
 # Uncomment the following line to uninstall Oh My Zsh
-rm -r ~/.oh-my-zsh
+# rm -rf ~/.oh-my-zsh
 ```
