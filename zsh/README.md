@@ -1,8 +1,13 @@
 # Setup guide for Zsh configs
 
 This guide assumes that zsh has been installed and is used as the default shell. Also, make sure curl and git have been installed.
+For the Zsh prompt to be displayed properly, the FiraMono Nerd Font has to be installed and set as the font used by the terminal program of choice.
 
 Make sure to be in this directory of the repo before running any scripts.
+
+```sh
+yay -S otf-nerd-fonts-fira-mono
+```
 
 ## Installation
 Run the `install.sh` script. This script creates symlinks of the `.zshrc` and `.p10k.zsh` files in the home directory.
