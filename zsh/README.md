@@ -10,12 +10,12 @@ yay -S otf-nerd-fonts-fira-mono
 ```
 
 ## Installation
-Run the `install.sh` script. This script creates symlinks of the `.zshrc` and `.p10k.zsh` files in the home directory.
+Run the `install.sh` script. This script creates symlinks of the `.zshrc` and `.p10k.zsh` files in the home directory. It will also install [Oh My Zsh](https://github.com/ohmyzsh/ohmyzsh) and [Powerlevel10K](https://github.com/romkatv/powerlevel10k).
 
 ```sh
 ./install.sh
 ```
-It will also install [Oh My Zsh](https://github.com/ohmyzsh/ohmyzsh) and [Powerlevel10K](https://github.com/romkatv/powerlevel10k). Comment those lines out in future if just recreating symlinks to the config files.
+Comment those lines out in future if just recreating symlinks to the config files.
 
 ```sh
 # Comment the following line to disable installation of Oh My Zsh
