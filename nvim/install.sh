@@ -1,4 +1,3 @@
 #!/bin/sh
-ln -s "$PWD/.vimrc" ~/.vimrc
 mkdir ~/.config/nvim
-ln -s "$PWD/init.vim" ~/.config/nvim/init.vim
+ln -s "$PWD/init.lua" ~/.config/nvim/init.lua
