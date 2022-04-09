@@ -1,2 +1,2 @@
 #!/bin/sh
-rm -r ~/.config/nvim
+rm -rf ~/.config/nvim
