@@ -42,8 +42,6 @@ Due to the usage of the symlinks, there is no need to run `uninstall.sh` & `inst
 
 To add/remove plugins, edit the `pkgs` variable in `bootstrap.lua`.
 
-Also remember to remove the config files for the plugins removed in the `plugins/configs/` directory and also remove any `require()` statements in `init.lua` sourcing the config files of the removed plugins.
-
 ```lua
 local pkgs = {
     "savq/paq-nvim";
@@ -51,9 +49,12 @@ local pkgs = {
     -- Add plugins here
 }
 ```
+
+Also remember to remove the config files for the plugins removed in the `plugins/configs/` directory and also remove any `require()` statements in `init.lua` sourcing the config files of the removed plugins.
+
 Subsequently, run `:PaqSync` in neovim which makes sure plugins installed are the ones specified in `bootstrap.lua`. Relaunch neovim again to make sure the new configurations give no errors.
 
-Please read the [paq README](https://github.com/savq/paq-nvim) to view more information of using paq.
+Please read the [paq README](https://github.com/savq/paq-nvim) for more information of using paq.
 
 ## Uninstallation
 
