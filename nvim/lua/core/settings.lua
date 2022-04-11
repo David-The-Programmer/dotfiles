@@ -19,5 +19,3 @@ set.termguicolors = true
 -- Enable syntax highlighting
 vim.cmd("syntax enable")
 
--- Use the codedark colour scheme
-vim.cmd("colorscheme codedark")

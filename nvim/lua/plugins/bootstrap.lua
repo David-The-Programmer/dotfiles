@@ -5,7 +5,7 @@
 local pkgs = {
     "savq/paq-nvim";
 
-    "tomasiser/vim-code-dark";
+    "Mofiqul/vscode.nvim";
 
     "tpope/vim-surround";
     "vim-scripts/ReplaceWithRegister";
