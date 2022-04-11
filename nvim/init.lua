@@ -1,5 +1,6 @@
 -- Initialise the core configurations
 require("core/settings")
+require("core/colourscheme")
 require("core/keymaps")
 
 -- Initialise the plugin configurations

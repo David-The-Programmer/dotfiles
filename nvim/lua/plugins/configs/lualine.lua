@@ -1,6 +1,10 @@
+--
+-- Configs for lualine plugin
+--
+
 require("lualine").setup {
     options = {
-        theme = "codedark"
+        theme = "vscode"
     },
     sections = {
         lualine_a = {"mode"},
