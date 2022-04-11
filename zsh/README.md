@@ -29,6 +29,10 @@ git clone https://github.com/zsh-users/zsh-autosuggestions.git ${ZSH_CUSTOM:-$HO
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
 ```
 
+## Editing configurations
+
+Due to the usage of the symlinks, there is no need to run `uninstall.sh` & `install.sh` continuously. After editing any config files (`.zshrc`, `.p10k.zsh`), just source those files again.
+
 ## Uninstallation
 Run the `uninstall.sh` script. It will delete the symlinks of the `.zshrc` and `.p10k.zsh` files in the home directory. 
 
