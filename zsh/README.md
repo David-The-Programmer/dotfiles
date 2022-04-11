@@ -36,12 +36,12 @@ Run the `uninstall.sh` script. It will delete the symlinks of the `.zshrc` and `
 ./uninstall.sh
 ```
 
-To remove [Oh My Zsh](https://github.com/ohmyzsh/ohmyzsh) and [Powerlevel10K](https://github.com/romkatv/powerlevel10k), uncomment the section in the script before running it.
+The script also removes [Oh My Zsh](https://github.com/ohmyzsh/ohmyzsh) and [Powerlevel10K](https://github.com/romkatv/powerlevel10k) by default. Comment the section in the script before running it if just deleting symlinks.
 
 ```sh
-# Uncomment the following line to uninstall Powerlevel10k theme from Oh My Zsh
-# rm -rf -- ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
+# Comment the following line to disable the uninstallation of the Powerlevel10k theme from Oh My Zsh
+rm -rf -- ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
 
-# Uncomment the following line to uninstall Oh My Zsh
-# rm -rf ~/.oh-my-zsh
+# Comment the following line to disable the uninstallation of Oh My Zsh
+rm -rf ~/.oh-my-zsh
 ```
