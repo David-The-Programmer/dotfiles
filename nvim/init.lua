@@ -6,5 +6,5 @@ require("core/keymaps")
 require("plugins/configs/paq-nvim")
 require("plugins/configs/camel-case-motion")
 require("plugins/configs/nerd-commenter")
-require("plugins/configs/vim-airline")
+require("plugins/configs/lualine")
 

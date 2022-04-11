@@ -13,7 +13,7 @@ local pkgs = {
 
     "preservim/nerdcommenter";
 
-    "vim-airline/vim-airline";
+    "nvim-lualine/lualine.nvim";
 }
 
 local function clone_paq()
