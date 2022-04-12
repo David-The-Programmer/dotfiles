@@ -5,6 +5,8 @@
 local pkgs = {
     "savq/paq-nvim";
 
+    "nathom/filetype.nvim";
+
     "Mofiqul/vscode.nvim";
 
     "tpope/vim-surround";
