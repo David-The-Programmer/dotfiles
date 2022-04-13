@@ -8,4 +8,5 @@ require("plugins/configs/paq-nvim")
 require("plugins/configs/camel-case-motion")
 require("plugins/configs/nerd-commenter")
 require("plugins/configs/lualine")
+require("plugins/configs/telescope")
 
