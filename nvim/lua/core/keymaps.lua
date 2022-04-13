@@ -18,3 +18,7 @@ map("n", "k", "gk", { noremap = true })
 -- Keymaps for NERD Commenter plugin
 -- Invoke comments by pressing ctrl /
 map("", "<C-_>", "<plug>NERDCommenterToggle", { noremap = false })
+
+-- Keymaps for telescope.nvim plugin
+map("n", "<leader>ff", "<cmd>Telescope find_files<cr>", { noremap = false })
+map("n", "<leader>fg", "<cmd>Telescope live_grep<cr>", { noremap = false })

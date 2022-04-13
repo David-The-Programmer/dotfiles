@@ -16,6 +16,11 @@ local pkgs = {
     "preservim/nerdcommenter";
 
     "nvim-lualine/lualine.nvim";
+
+    "nvim-lua/plenary.nvim";
+    "BurntSushi/ripgrep";
+    "nvim-telescope/telescope.nvim";
+    { "nvim-telescope/telescope-fzf-native.nvim", run="make" };
 }
 
 local function clone_paq()
