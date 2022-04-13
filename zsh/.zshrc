@@ -116,6 +116,3 @@ export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || pr
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
 
 bindkey -v
-
-source /usr/share/fzf/key-bindings.zsh
-source /usr/share/fzf/completion.zsh
