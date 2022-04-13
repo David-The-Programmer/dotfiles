@@ -1,6 +1,6 @@
 # Setup guide for Neovim configs
 
-These configs are for neovim configs using Lua. These configs are only compatible for Neovim 0.6+. This guide assumes that Neovim has been installed.
+These configs are for neovim configs using Lua. These configs are only compatible for Neovim 0.6+. This guide assumes that Neovim has been installed. Also make sure that [ripgrep](https://github.com/BurntSushi/ripgrep) is installed via yay.
 
 Make sure to be in this directory of the repo before running any scripts.
 
