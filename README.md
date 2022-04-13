@@ -10,4 +10,5 @@ Before following the README docs in each of the subfolders, please ensure that t
 - zsh
 - curl
 - neovim and/or vim
+- ripgrep
 

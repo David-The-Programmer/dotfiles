@@ -1,4 +1,8 @@
 #!/bin/sh
-ln -s "$PWD/.vimrc" ~/.vimrc
-mkdir ~/.config/nvim
-ln -s "$PWD/init.vim" ~/.config/nvim/init.vim
+
+# Create symlink of nvim subfolder in ~/.config directory
+ln -s "$PWD" ~/.config
+
+# Bootstrap plugins by initialising paq and installing plugins automatically
+nvim --headless -u NONE -c 'lua require("plugins/bootstrap").bootstrap_paq()'
+
