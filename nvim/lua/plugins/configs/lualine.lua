@@ -24,3 +24,6 @@ require("lualine").setup {
         },
     },
 }
+
+-- Override default showing of mode as long as lualine is used
+vim.cmd("set noshowmode")
