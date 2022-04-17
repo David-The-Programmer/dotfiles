@@ -15,6 +15,9 @@ map("n", "W", "gt", { noremap = true })
 map("n", "j", "gj", { noremap = true })
 map("n", "k", "gk", { noremap = true })
 
+-- Clear highlight until next search
+map("n", "<esc>", ":noh<return><esc>", { noremap = true })
+
 -- Keymaps for NERD Commenter plugin
 -- Invoke comments by pressing ctrl /
 map("", "<C-_>", "<plug>NERDCommenterToggle", { noremap = false })
