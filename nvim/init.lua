@@ -9,4 +9,6 @@ require("plugins/configs/camel-case-motion")
 require("plugins/configs/nerd-commenter")
 require("plugins/configs/lualine")
 require("plugins/configs/telescope")
+require("plugins/configs/nvim-lsp-installer")
+require("plugins/configs/nvim-cmp")
 
