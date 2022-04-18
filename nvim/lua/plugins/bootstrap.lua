@@ -21,6 +21,16 @@ local pkgs = {
     "BurntSushi/ripgrep";
     "nvim-telescope/telescope.nvim";
     { "nvim-telescope/telescope-fzf-native.nvim", run="make" };
+
+    "neovim/nvim-lspconfig";
+    "williamboman/nvim-lsp-installer";
+
+    "hrsh7th/nvim-cmp";
+    "hrsh7th/cmp-nvim-lsp";
+    "hrsh7th/cmp-buffer";
+    "hrsh7th/cmp-path";
+    "L3MON4D3/LuaSnip";
+    "saadparwaiz1/cmp_luasnip";
 }
 
 local function clone_paq()
