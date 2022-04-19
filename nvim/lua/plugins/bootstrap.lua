@@ -34,7 +34,10 @@ local pkgs = {
 
     "nvim-treesitter/nvim-treesitter";
 
+    "Raimondi/delimitMate";
+
 }
+
 
 local function clone_paq()
     local path = vim.fn.stdpath("data") .. "/site/pack/paqs/start/paq-nvim"
