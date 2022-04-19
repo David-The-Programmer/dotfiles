@@ -13,6 +13,9 @@ set.expandtab = true
 set.tabstop = 4
 set.shiftwidth = 4
 
+-- Highlight text upon yank
+vim.cmd("au TextYankPost * silent! lua vim.highlight.on_yank({higroup='IncSearch', timeout=200})")
+
 -- Enable usage of true colours in the terminal
 set.termguicolors = true
 
