@@ -30,8 +30,7 @@ local capabilities = require("cmp_nvim_lsp").update_capabilities(vim.lsp.protoco
 local opts = {
     on_attach = on_attach,
     flags = {
-        -- This will be the default in neovim 0.7+
-        debounce_text_changes = 150,
+        debounce_text_changes = 100,
     },
     capabilities = capabilities
 }
