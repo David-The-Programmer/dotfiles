@@ -16,6 +16,5 @@ set.shiftwidth = 4
 -- Enable usage of true colours in the terminal
 set.termguicolors = true
 
--- Enable syntax highlighting
-vim.cmd("syntax enable")
-
+-- Disable syntax highlighting in favour of nvim-treesitter
+vim.cmd("syntax off")

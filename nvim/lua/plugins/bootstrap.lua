@@ -31,6 +31,9 @@ local pkgs = {
     "hrsh7th/cmp-path";
     "L3MON4D3/LuaSnip";
     "saadparwaiz1/cmp_luasnip";
+
+    "nvim-treesitter/nvim-treesitter";
+
 }
 
 local function clone_paq()
