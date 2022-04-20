@@ -1,6 +1,22 @@
 require("nvim-treesitter.configs").setup {
-    ensure_installed = "all",
-    sync_install = false,
+    ensure_installed = {
+	    "bash",
+	    "comment",
+	    "css",
+	    "go",
+	    "gomod",
+	    "html",
+	    "javascript",
+	    "jsdoc",
+	    "json",
+	    "lua",
+        "markdown",
+	    "python",
+	    "regex",
+	    "typescript",
+	    "yaml",
+    },
+    sync_install = true,
     highlight = {
         enable = true,
         -- Setting this to true will run `:h syntax` and tree-sitter at the same time.
