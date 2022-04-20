@@ -1,5 +1,5 @@
 --
--- This file holds all keymaps for neovim settings & plugins
+-- This file holds general keymaps to be used with or without plugins
 --
 
 local map = vim.api.nvim_set_keymap
@@ -18,10 +18,3 @@ map("n", "k", "gk", { noremap = true })
 -- Clear highlight until next search
 map("n", "<esc>", "<cmd>noh<return><esc>", { noremap = true, silent = true })
 
--- Keymaps for NERD Commenter plugin
--- Invoke comments by pressing ctrl /
-map("", "<C-_>", "<plug>NERDCommenterToggle", { noremap = false })
-
--- Keymaps for telescope.nvim plugin
-map("n", "<leader>ff", "<cmd>Telescope find_files<cr>", { noremap = false })
-map("n", "<leader>fg", "<cmd>Telescope live_grep<cr>", { noremap = false })
