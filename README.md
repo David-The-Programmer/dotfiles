@@ -9,6 +9,13 @@ Before following the README docs in each of the subfolders, please ensure that t
 - git
 - zsh
 - curl
-- neovim and/or vim
+- unzip
+- tar
+- gzip
+- neovim
 - ripgrep
+- nvm
+- node.js & npm (via nvm)
+- go v1.17+
+- python3 & pip3
 
