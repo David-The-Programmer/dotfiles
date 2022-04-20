@@ -1,6 +1,6 @@
 # Setup guide for Neovim configs
 
-These configs are for neovim configs using Lua. These configs are only compatible for Neovim 0.6+. This guide assumes that Neovim has been installed. Also make sure that [ripgrep](https://github.com/BurntSushi/ripgrep) is installed via yay.
+These configs are for neovim configs using Lua. These configs are only compatible for Neovim 0.6+. This guide assumes that Neovim has been installed.
 
 Make sure to be in this directory of the repo before running any scripts.
 
@@ -24,8 +24,8 @@ Make sure to be in this directory of the repo before running any scripts.
 - `init.lua` is the main config file which sources modules from the `core` & `plugins` folder.
 - `install.sh` is the shell script used to bootstrap neovim configs and install the plugins.
 - `uninstall.sh` is the shell script used to remove neovim configs and uninstall all the installed plugins.
-- `core/` contains core configurations, which includes the keymappings (`keymaps.lua`), neovim settings (`settings.lua`) and colour schemes (`colourscheme.lua`).
-- `plugins/` contains all plugin configurations. `bootstrap.lua` contains the names of all plugins to be installed, as well as functions to install the [paq](https://github.com/savq/paq-nvim) plugin manager and plugins. `configs/` contains configuration files specific to the plugins installed. One configuration file per plugin. The names of each of those files would follow the `<plugin-name>.lua` convention.
+- `core/` contains core configurations, which includes the core keymappings (`keymaps.lua`), neovim settings (`settings.lua`) and colour schemes (`colourscheme.lua`).
+- `plugins/` contains all plugin configurations. `bootstrap.lua` contains the names of all plugins to be installed, as well as functions to install the [paq](https://github.com/savq/paq-nvim) plugin manager and plugins. `configs/` contains configuration files specific to the plugins installed. One configuration file per plugin. The names of each of those files would follow the `<plugin-name>.lua` convention. Each plugin configuration file contains plugin variables, setup tables and keymappings.
 
 ## Installation
 
