@@ -3,28 +3,37 @@
 --
 
 local pkgs = {
+    -- Plugin manager
     "savq/paq-nvim";
 
+    -- Replace default filetype plugin for faster startup
     "nathom/filetype.nvim";
 
+    -- Colourscheme
     "Mofiqul/vscode.nvim";
 
+    -- Editing with convenience
     "tpope/vim-surround";
     "vim-scripts/ReplaceWithRegister";
     "bkad/CamelCaseMotion";
 
+    -- Making comments
     "preservim/nerdcommenter";
 
+    -- Statusline & Tabline
     "nvim-lualine/lualine.nvim";
 
+    -- Telescope
     "nvim-lua/plenary.nvim";
     "BurntSushi/ripgrep";
     "nvim-telescope/telescope.nvim";
     { "nvim-telescope/telescope-fzf-native.nvim", run="make" };
 
+    -- LSP
     "neovim/nvim-lspconfig";
     "williamboman/nvim-lsp-installer";
 
+    -- LSP autocompletion
     "hrsh7th/nvim-cmp";
     "hrsh7th/cmp-nvim-lsp";
     "hrsh7th/cmp-buffer";
@@ -32,8 +41,10 @@ local pkgs = {
     "L3MON4D3/LuaSnip";
     "saadparwaiz1/cmp_luasnip";
 
+    -- Syntax highlighting
     "nvim-treesitter/nvim-treesitter";
 
+    -- Autoclose parenthesis, quotes, etc
     "Raimondi/delimitMate";
 
 }
