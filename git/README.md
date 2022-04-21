@@ -1,5 +1,6 @@
 # Setup guide for Git configs
 
+
 **Note, this is my own setup for using Git/Github with HTTPs, this assumes Git is already installed.**
 
 This git config uses [git-credential-manager](https://github.com/GitCredentialManager/git-credential-manager) to store git credentials. The option used for storage is the GPG/pass compatible files option, as described [here](https://github.com/GitCredentialManager/git-credential-manager/blob/main/docs/credstores.md).
@@ -28,7 +29,7 @@ git config --global user.name "<username>"
 
 git config --global user.email "<email>"
 
-git config --global core.editor vim
+git config --global core.editor nvim
 ```
 
 Subequently, create a GPG key pair using the gpg tool.
