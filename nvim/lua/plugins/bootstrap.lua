@@ -47,6 +47,9 @@ local pkgs = {
     -- Autoclose parenthesis, quotes, etc
     "Raimondi/delimitMate";
 
+    -- For easy terminal management
+    "voldikss/vim-floaterm";
+
 }
 
 

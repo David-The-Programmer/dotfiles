@@ -13,4 +13,5 @@ require("plugins/configs/nvim-lsp-installer")
 require("plugins/configs/nvim-cmp")
 require("plugins/configs/nvim-treesitter")
 require("plugins/configs/delimitmate")
+require("plugins/configs/vim-floaterm")
 
