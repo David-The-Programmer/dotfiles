@@ -18,7 +18,7 @@ local pkgs = {
     "bkad/CamelCaseMotion";
 
     -- Making comments
-    "preservim/nerdcommenter";
+    "numToStr/Comment.nvim";
 
     -- Statusline & Tabline
     "nvim-lualine/lualine.nvim";
