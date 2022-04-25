@@ -65,7 +65,16 @@ Run the `uninstall.sh` script. This will delete the symlinks created and remove 
 ./uninstall.sh
 ```
 
+## Roadmap
+
+- [] Fix missing syntax highlighting for COMMIT_EDITMSG file when doing git commits
+- [] Improving autocompletion configurations to suggest LSP completions first (taking priority over text predictions)
+- [] Improving LSP configurations to easily set custom LSP configs for each different language
+- [] Add debugging (DAP)
+- [] Improving current terminal configs (floatterm plugin configs) to show previous terminal (if any) after killing current terminal
+
 ## Useful links
 
 - [Guide to configure neovim using Lua](https://vonheikemen.github.io/devlog/tools/configuring-neovim-using-lua/)
 - [A neovim configs repo I took inspiration from](https://github.com/brainfucksec/neovim-lua)
+- [Tutorial on nvim-cmp plugin by TJ DeVries](https://www.youtube.com/watch?v=_DnmphIwnjo&ab_channel=TJDeVries)
