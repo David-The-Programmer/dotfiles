@@ -41,6 +41,9 @@ local pkgs = {
     "L3MON4D3/LuaSnip";
     "saadparwaiz1/cmp_luasnip";
 
+    -- LSP completion for Neovim Lua API
+    "hrsh7th/cmp-nvim-lua";
+
     -- Syntax highlighting
     "nvim-treesitter/nvim-treesitter";
 

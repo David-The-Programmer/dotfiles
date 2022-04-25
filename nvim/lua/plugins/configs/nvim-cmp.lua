@@ -24,10 +24,10 @@ cmp.setup({
         ["<S-Tab>"] = cmp.mapping(cmp.mapping.select_prev_item(), { "i", "s" }),
     },
     sources = cmp.config.sources({
+        { name = "nvim_lua" },
         { name = "nvim_lsp" },
-        { name = "luasnip" }, -- For luasnip users.
-    }, {
-      { name = "buffer" },
+        { name = "luasnip" },
+        { name = "buffer" },
     })
   })
 

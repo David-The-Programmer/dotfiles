@@ -7,5 +7,5 @@ ln -s "$PWD" ~/.config
 nvim --headless -u NONE -c 'lua require("plugins/bootstrap").bootstrap_paq()'
 
 # Install the language servers 
-nvim --headless -c "LspInstall --sync gopls cssls tsserver emmet_ls html jsonls" -c q
+nvim --headless -c "LspInstall --sync gopls sumneko_lua cssls tsserver emmet_ls html jsonls" -c q
 
