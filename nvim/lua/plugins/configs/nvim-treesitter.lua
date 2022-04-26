@@ -5,6 +5,7 @@ require("nvim-treesitter.configs").setup {
 	    "css",
 	    "go",
 	    "gomod",
+        "help", -- for vim help files
 	    "html",
 	    "javascript",
 	    "jsdoc",
@@ -14,6 +15,7 @@ require("nvim-treesitter.configs").setup {
 	    "python",
 	    "regex",
 	    "typescript",
+        "vim",
 	    "yaml",
     },
     sync_install = true,
