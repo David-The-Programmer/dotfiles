@@ -21,6 +21,7 @@ Make sure to be in this directory of the repo before running any scripts.
 │           └── <plugin-name>.lua
 └── README.md
 ```
+
 - `init.lua` is the main config file which sources modules from the `core` & `plugins` folder.
 - `install.sh` is the shell script used to bootstrap neovim configs and install the plugins.
 - `uninstall.sh` is the shell script used to remove neovim configs and uninstall all the installed plugins.
@@ -57,6 +58,8 @@ Subsequently, run `:PaqSync` in neovim which makes sure plugins installed are th
 
 Please read the [paq README](https://github.com/savq/paq-nvim) for more information of using paq.
 
+**Please run `:TSUpdate` to update the treesitter parsers after running `:PaqSync`. This will ensure that treesitter works as expected, i.e, no error messages, syntax highlighting is present, etc. Currently there is no way to update treesitter using paq**
+
 ## Uninstallation
 
 Run the `uninstall.sh` script. This will delete the symlinks created and remove all plugins installed by the `install.sh` script.
@@ -67,6 +70,7 @@ Run the `uninstall.sh` script. This will delete the symlinks created and remove 
 
 ## Roadmap
 
+- [ ] Automate updating treesitter using paq, instead of manual `:TSUpdate` command
 - [ ] Fix missing syntax highlighting for COMMIT_EDITMSG file when doing git commits
 - [ ] Improving autocompletion configurations to suggest LSP completions first (taking priority over text predictions)
 - [ ] Refactor and modularise LSP configs (so that it is less tightly coupled)
