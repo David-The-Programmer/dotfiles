@@ -1,3 +1,7 @@
+--
+-- Configurations for the nvim-cmp plugin
+--
+
 local set = vim.opt
 set.completeopt = {"menu", "menuone", "noselect"}
 

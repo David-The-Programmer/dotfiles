@@ -30,8 +30,8 @@ local pkgs = {
     { "nvim-telescope/telescope-fzf-native.nvim", run="make" };
 
     -- LSP
+    "williamboman/mason.nvim";
     "neovim/nvim-lspconfig";
-    "williamboman/nvim-lsp-installer";
 
     -- LSP autocompletion
     "hrsh7th/nvim-cmp";
