@@ -23,5 +23,3 @@ end
 return {
     lsp_servers = lsp_servers
 }
-
--- TODO: Replace paq with lazy.nvim or packer to have TS auto update
