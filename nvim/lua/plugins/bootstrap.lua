@@ -31,6 +31,7 @@ local pkgs = {
 
     -- LSP
     "williamboman/mason.nvim";
+    "williamboman/mason-lspconfig.nvim";
     "neovim/nvim-lspconfig";
 
     -- LSP autocompletion
