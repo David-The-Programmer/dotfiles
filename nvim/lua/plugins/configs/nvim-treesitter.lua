@@ -3,8 +3,14 @@ require("nvim-treesitter.configs").setup {
 	    "bash",
 	    "comment",
 	    "css",
+        "diff", -- for git diff
 	    "go",
 	    "gomod",
+        "gitattributes",
+        "gitcommit",
+        "git_config",
+        "gitignore",
+        "git_rebase",
         "help", -- for vim help files
 	    "html",
 	    "javascript",
