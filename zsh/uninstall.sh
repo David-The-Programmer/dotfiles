@@ -1,14 +1,14 @@
 #!/bin/sh
 
+# Remove zim
+rm -rf ~/.zim
+echo "removed ~/.zim"
+
 # Delete symlinks to zsh configs
 rm -f ~/.zshrc
+rm -f ~/.zimrc
 rm -f ~/.p10k.zsh
-
-# Comment the following line to disable the uninstallation of the Powerlevel10k theme from Oh My Zsh
-rm -rf -- ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
-
-# Comment the following line to disable the uninstallation of Oh My Zsh
-rm -rf ~/.oh-my-zsh
+echo "deleted all symlinks to zsh configs"
 
 # restart zsh
 exec zsh
