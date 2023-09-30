@@ -30,6 +30,10 @@ git config --global user.email "<email>"
 git config --global core.editor nvim
 ```
 
+The email used for git should be the Github noreply address, which has the format: `{ID}+{username}@users.noreply.github.com`
+
+This can be found by going to your Github's `Settings` > `Emails`.
+
 ## 1. Creation of new entry in KeePassXC
 1. Go into the KeePassXC GUI and create a new entry. The title of the entry should be: `Github SSH Key`.
 2. Leave all other fields blank.
