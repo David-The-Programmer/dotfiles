@@ -62,7 +62,27 @@ require("lazy").setup({
         init = function()
             vim.cmd.colorscheme("vscode")
         end,
-    }
+    },
+    { 
+        "nvim-treesitter/nvim-treesitter",
+        build = ":TSUpdate",
+        opts = {
+            ensure_installed = { "bash", "c", "diff", "go", "gomod", "gosum", "html", "lua", "luadoc", "markdown", "vim", "vimdoc" },
+            auto_installed = true,
+            highlight = {
+                enable = true,
+                additional_vim_regex_highlighting = false,
+            },
+            indent = {
+                enable = true,
+            },
+        },
+        config = function(_, opts)
+            -- [[ Configure Treesitter ]] See `:help nvim-treesitter`
+            -- Prefer git instead of curl in order to improve connectivity in some environments
+            require("nvim-treesitter.install").prefer_git = true
+            require("nvim-treesitter.configs").setup(opts)
+        end
+    },
 })
--- TODO: Add treesitter for better syntax highlighting, lazy load according to filetype
 -- TODO: Other old school plugins, camelCaseMotion, replaceWithRegister, ...
