@@ -16,6 +16,12 @@ vim.keymap.set("n", "<Esc>", "<cmd>nohlsearch<CR>")
 vim.keymap.set("n", "Q", "gT")
 vim.keymap.set("n", "W", "gt")
 
+-- Remap focus of windows to use ctrl-h (left), ctrl-l (right), ctrl-j (down), ctrl-k (up)
+vim.keymap.set("n", "<C-h>", "<C-w><C-h>", { desc = "Move focus to the left window" })
+vim.keymap.set("n", "<C-l>", "<C-w><C-l>", { desc = "Move focus to the right window" })
+vim.keymap.set("n", "<C-j>", "<C-w><C-j>", { desc = "Move focus to the lower window" })
+vim.keymap.set("n", "<C-k>", "<C-w><C-k>", { desc = "Move focus to the upper window" })
+
 -- Highlight when yanking (copying) text
 --  Try it with `yap` in normal mode
 --  See `:help vim.highlight.on_yank()`
@@ -58,3 +64,5 @@ require("lazy").setup({
         end,
     }
 })
+-- TODO: Add treesitter for better syntax highlighting, lazy load according to filetype
+-- TODO: Other old school plugins, camelCaseMotion, replaceWithRegister, ...
