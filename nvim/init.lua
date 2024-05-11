@@ -105,4 +105,3 @@ require("lazy").setup({
         "bkad/CamelCaseMotion",
     },
 })
--- TODO: Other old school plugins, camelCaseMotion, replaceWithRegister, ...
