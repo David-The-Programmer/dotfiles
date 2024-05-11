@@ -1,6 +1,5 @@
 vim.g.mapleader = " "
 vim.g.maplocalleader = " "
-vim.g.camelcasemotion_key = "<leader>"
 vim.opt.number = true
 vim.opt.relativenumber = true
 vim.opt.breakindent = true
@@ -98,10 +97,11 @@ require("lazy").setup({
         event = "VeryLazy",
         opts = {}
     },
-    {
-        "vim-scripts/ReplaceWithRegister",
-    },
+    { "vim-scripts/ReplaceWithRegister"},
     {
         "bkad/CamelCaseMotion",
+        init = function()
+            vim.g.camelcasemotion_key = "<leader>"
+        end
     },
 })
