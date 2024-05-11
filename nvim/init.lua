@@ -1,3 +1,6 @@
+vim.g.mapleader = " "
+vim.g.maplocalleader = " "
+vim.g.camelcasemotion_key = "<leader>"
 vim.opt.number = true
 vim.opt.relativenumber = true
 vim.opt.breakindent = true
@@ -26,11 +29,11 @@ vim.keymap.set("n", "<C-k>", "<C-w><C-k>", { desc = "Move focus to the upper win
 --  Try it with `yap` in normal mode
 --  See `:help vim.highlight.on_yank()`
 vim.api.nvim_create_autocmd("TextYankPost", {
-  desc = "Highlight when yanking (copying) text",
-  group = vim.api.nvim_create_augroup("kickstart-highlight-yank", { clear = true }),
-  callback = function()
-    vim.highlight.on_yank()
-  end,
+    desc = "Highlight when yanking (copying) text",
+    group = vim.api.nvim_create_augroup("kickstart-highlight-yank", { clear = true }),
+    callback = function()
+        vim.highlight.on_yank()
+    end,
 })
 
 -- Checks if lazy.nvim has been installed in neovim user data dir, if not, install the plugin by cloning the plugin into the user data dir
@@ -83,6 +86,23 @@ require("lazy").setup({
             require("nvim-treesitter.install").prefer_git = true
             require("nvim-treesitter.configs").setup(opts)
         end
+    },
+    {
+        "windwp/nvim-autopairs",
+        event = "InsertEnter",
+        config = true,
+        opts = {}
+    },
+    {
+        "kylechui/nvim-surround",
+        event = "VeryLazy",
+        opts = {}
+    },
+    {
+        "vim-scripts/ReplaceWithRegister",
+    },
+    {
+        "bkad/CamelCaseMotion",
     },
 })
 -- TODO: Other old school plugins, camelCaseMotion, replaceWithRegister, ...
