@@ -2,9 +2,9 @@
 
 ## Getting Started
 
-Install tmux
+Install tmux and wl-clipboard(for tmux-yank plugin)
 ```bash
-yay -Syu tmux
+yay -Syu tmux wl-clipboard
 ```
 
 Install the tmux plugin manager(tpm)
