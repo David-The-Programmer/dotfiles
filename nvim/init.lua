@@ -29,11 +29,19 @@ vim.keymap.set("n", "<C-k>", "<C-w><C-k>", { desc = "Move focus to the upper win
 --  See `:help vim.highlight.on_yank()`
 vim.api.nvim_create_autocmd("TextYankPost", {
     desc = "Highlight when yanking (copying) text",
-    group = vim.api.nvim_create_augroup("kickstart-highlight-yank", { clear = true }),
     callback = function()
         vim.highlight.on_yank()
     end,
 })
+
+-- Make session upon writing to file or quitting nvim
+vim.api.nvim_create_autocmd({ "BufWritePost", "VimLeave"}, {
+    desc = "Make session upon writing to file",
+    callback = function()
+        vim.cmd("mksession!")
+    end,
+}) 
+
 
 -- Checks if lazy.nvim has been installed in neovim user data dir, if not, install the plugin by cloning the plugin into the user data dir
 local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
