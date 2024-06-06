@@ -1,4 +1,4 @@
-# Setup guide for Git configs
+# Manual setup guide for Git configs
 
 **Note, this is my own setup for using Git/Github with SSH, this assumes Git is already installed.**
 

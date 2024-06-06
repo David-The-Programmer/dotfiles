@@ -1,4 +1,4 @@
-# Setup for tmux
+# Manual setup for tmux
 
 ## Getting Started
 
@@ -26,7 +26,7 @@ tmux source ~/.config/tmux/tmux.conf
 ```
 Press `prefix` (tmux prefix keybinding) + `I` (capital i) to clone all plugins listed in `~/.config/tmux/tmux.conf` to `~/.tmux/plugins/` directory and source `~/.config/tmux/tmux.conf`.
 
-## Uninstalling
+## Uninstallation
 
 Remove the symlink created
 ```bash

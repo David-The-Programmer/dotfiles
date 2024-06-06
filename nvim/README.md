@@ -1,4 +1,4 @@
-# Setup for neovim
+# Manual setup for neovim
 
 ## Getting Started
 
@@ -10,7 +10,7 @@ ln -s "$PWD" ~/.config
 
 Subsequently run the `nvim` command to install `lazy.nvim` and the plugins specified in `init.lua`.
 
-## Uninstalling
+## Uninstallation
 
 Remove the following directories
 - `~/.local/share/nvim/lazy`
