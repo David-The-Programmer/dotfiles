@@ -34,7 +34,7 @@ Install the dotfiles
 cd dotfiles
 ```
 ```
-./install.sh
+./scripts/install.sh
 ```
 The locations of directories that would be created/populated after installation can be found under the **Uninstallation** section of the **README** files in each subdirectory.
 
@@ -42,6 +42,6 @@ The locations of directories that would be created/populated after installation 
 
 Uninstall the dotfiles
 ```
-./uninstall.sh
+./scripts/uninstall.sh
 ```
 Uninstallation will remove all the files installed.
