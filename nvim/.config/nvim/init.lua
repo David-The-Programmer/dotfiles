@@ -43,6 +43,15 @@ vim.api.nvim_create_autocmd({ "BufWritePost", "VimLeave"}, {
     end,
 }) 
 
+-- Make sure OCAML files use 2 spaces for indentations
+vim.api.nvim_create_autocmd("FileType", {
+    desc = "Make sure OCAML files use 2 spaces for indents",
+	pattern = "ocaml",
+	callback = function()
+		vim.opt_local.shiftwidth = 2
+		vim.opt_local.tabstop = 2
+	end
+})
 
 -- Checks if lazy.nvim has been installed in neovim user data dir, if not, install the plugin by cloning the plugin into the user data dir
 local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
@@ -85,7 +94,7 @@ require("lazy").setup({
                 additional_vim_regex_highlighting = false,
             },
             indent = {
-                enable = true,
+                enable = false,
             },
         },
         config = function(_, opts)
