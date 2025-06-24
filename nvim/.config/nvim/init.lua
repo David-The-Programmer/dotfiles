@@ -53,6 +53,28 @@ vim.api.nvim_create_autocmd("FileType", {
 	end
 })
 
+vim.api.nvim_create_autocmd("FileType", {
+  pattern = {
+      "bash", 
+      "c", 
+      "diff", 
+      "go", 
+      "gomod", 
+      "gosum", 
+      "gleam",
+      "html", 
+      "java",
+      "javascript",
+      "lua", 
+      "luadoc", 
+      "markdown", 
+      "ocaml",
+      "vim", 
+      "vimdoc" 
+  },
+  callback = function() vim.treesitter.start() end,
+})
+
 -- Checks if lazy.nvim has been installed in neovim user data dir, if not, install the plugin by cloning the plugin into the user data dir
 local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
 if not vim.loop.fs_stat(lazypath) then
@@ -85,23 +107,30 @@ require("lazy").setup({
     },
     { 
         "nvim-treesitter/nvim-treesitter",
+        lazy = false,
+        branch = 'main',
         build = ":TSUpdate",
-        opts = {
-            ensure_installed = { "bash", "c", "diff", "go", "gomod", "gosum", "html", "lua", "luadoc", "markdown", "vim", "vimdoc" },
-            auto_installed = true,
-            highlight = {
-                enable = true,
-                additional_vim_regex_highlighting = false,
-            },
-            indent = {
-                enable = false,
-            },
-        },
         config = function(_, opts)
-            -- [[ Configure Treesitter ]] See `:help nvim-treesitter`
-            -- Prefer git instead of curl in order to improve connectivity in some environments
-            require("nvim-treesitter.install").prefer_git = true
-            require("nvim-treesitter.configs").setup(opts)
+            -- Refer to this new README for new configs required when switching to main branch: 
+            -- https://github.com/nvim-treesitter/nvim-treesitter/tree/main?tab=readme-ov-file
+            require("nvim-treesitter").install({
+                "bash", 
+                "c", 
+                "diff", 
+                "go", 
+                "gomod", 
+                "gosum", 
+                "gleam",
+                "html", 
+                "java",
+                "javascript",
+                "lua", 
+                "luadoc", 
+                "markdown", 
+                "ocaml",
+                "vim", 
+                "vimdoc" 
+            })
         end
     },
     {
