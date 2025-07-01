@@ -46,7 +46,7 @@ vim.api.nvim_create_autocmd({ "BufWritePost", "VimLeave"}, {
 -- Make sure OCAML, gleam files use 2 spaces for indentations
 vim.api.nvim_create_autocmd("FileType", {
     desc = "Make sure OCAML files use 2 spaces for indents",
-	pattern = {"ocaml", "gleam"},
+	pattern = {"ocaml", "gleam", "nix"},
 	callback = function()
 		vim.opt_local.shiftwidth = 2
 		vim.opt_local.tabstop = 2
@@ -68,6 +68,7 @@ vim.api.nvim_create_autocmd("FileType", {
       "lua", 
       "luadoc", 
       "markdown", 
+      "nix",
       "ocaml",
       "vim", 
       "vimdoc" 
@@ -128,6 +129,7 @@ require("lazy").setup({
                 "luadoc", 
                 "markdown", 
                 "ocaml",
+                "nix",
                 "vim", 
                 "vimdoc" 
             })
