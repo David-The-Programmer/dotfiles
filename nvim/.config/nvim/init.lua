@@ -43,10 +43,10 @@ vim.api.nvim_create_autocmd({ "BufWritePost", "VimLeave"}, {
     end,
 }) 
 
--- Make sure OCAML, gleam files use 2 spaces for indentations
+-- Make sure files use 2 spaces for indentations
 vim.api.nvim_create_autocmd("FileType", {
     desc = "Make sure OCAML files use 2 spaces for indents",
-	pattern = {"ocaml", "gleam", "nix"},
+	pattern = {"ocaml", "gleam", "nix", "markdown"},
 	callback = function()
 		vim.opt_local.shiftwidth = 2
 		vim.opt_local.tabstop = 2
